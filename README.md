@@ -1,4 +1,6 @@
 # trashpile
+[![npm version](https://badge.fury.io/js/trashpile.svg)](https://badge.fury.io/js/trashpile)
+
 A proof-of-concept for creating HTML elements that can't be easily scraped by headless browsers.
 
 ## Concept
