@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="demo.css"/>
+<script type="module">
+	import Trashpile from './dist/trashpile.js';
+
+	document.addEventListener('DOMContentLoaded', () => {
+		let trashpile = new Trashpile();
+		let target = document.getElementById('trashpile');
+		let element = trashpile.createNode('my-email@example.com');
+
+		// Replace with trashpile element node.
+		for (let node of target.childNodes) target.removeChild(node);
+		target.appendChild(element);
+
+		// Update visualizers.
+		let nodes = document.querySelectorAll('textarea[data-property]');
+		for (let node of nodes) {
+			node.value = element[node.getAttribute('data-property')];
+			node.setAttribute('placeholder', 'Empty');
+			node.setAttribute('disabled', 'disabled');
+		}
+	});
+</script>
+</head>
+<body>
+
+<div class="trashpile-display">
+	<strong>What you see:</strong>
+	<div id="trashpile">[Oops, it broke.]</div>
+</div>
+
+<div class="trashpile-output">
+	<div>
+		<strong>innerText</strong>
+		<textarea data-property="innerText"></textarea>
+	</div>
+	<div>
+		<strong>innerHTML</strong>
+		<textarea data-property="innerHTML"></textarea>
+	</div>
+	<div>
+		<strong>textContent</strong>
+		<textarea data-property="textContent"></textarea>
+	</div>
+</div>
+
+</body>
+</html>

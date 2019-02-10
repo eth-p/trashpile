@@ -1,0 +1,22 @@
+{
+	"name": "trashpile",
+	"version": "0.1.0",
+	"description": "A proof-of-concept for creating HTML elements that can't be easily scraped by headless browsers.",
+	"scripts": {
+		"build": "tsc -p ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eth-p/trashpile.git"
+	},
+	"keywords": [],
+	"author": "eth-p",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/eth-p/trashpile/issues"
+	},
+	"homepage": "https://github.com/eth-p/trashpile#readme",
+	"devDependencies": {
+		"typescript": "^3.3.3"
+	}
+}

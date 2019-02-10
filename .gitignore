@@ -1,0 +1,12 @@
+# IDE
+.idea
+*.iml
+*.swp
+
+# OS
+.DS_Store
+._*
+Thumbs.db
+
+# Project
+node_modules

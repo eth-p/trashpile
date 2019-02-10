@@ -1,0 +1,28 @@
+
+.trashpile-display {
+	text-align: center;
+}
+
+.trashpile-output {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.trashpile-output > div {
+	padding: 5px;
+	flex: 1 1 auto;
+}
+
+.trashpile-output > div > strong {
+	display: block;
+	text-align: center;
+}
+
+.trashpile-output > div > textarea {
+	display: block;
+	width: 100%;
+	min-height: 200px;
+
+	font-family: monospace;
+}
