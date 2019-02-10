@@ -1,6 +1,6 @@
 {
 	"name": "trashpile",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A proof-of-concept for creating HTML elements that can't be easily scraped by headless browsers.",
 	"scripts": {
 		"build": "tsc -p ."

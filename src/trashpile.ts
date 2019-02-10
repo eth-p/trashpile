@@ -27,7 +27,7 @@ export default class Trashpile {
 		// Determine the number of and length of the real text fragments.
 		let fragments: (string | number)[] = this._generateFragmentArrangement(realCount, text.length, fragMin, fragMax);
 		let elements = this._generateElementArrangement(realCount, trashCount);
-		let container = document.createElement('container');
+		let container = document.createElement('span');
 
 		// Split the text into fragments.
 		let index = 0;
